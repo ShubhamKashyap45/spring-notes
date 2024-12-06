@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  <hibernate-mapping>
+    <class name="com.demo.beans.Student" table="studtab">
+    <id name="sid">
+      <generator class="assigned"></generator>
+    </id>
+    <property name="sname" type="string" not-null="true"></property>
+    <property name="mobile" type="string" column="mobno"></property>
+    <property name="marks" type="float" ></property>
+    </class>
+    
+  </hibernate-mapping>
